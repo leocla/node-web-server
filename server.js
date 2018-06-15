@@ -159,5 +159,7 @@ hore.listen(port, () => {
  * 3. --- git add [nama_file/folder]
  *      --- node_modules, server.log,,, --- TIDAK USAH DIMASUKAN
  * 4. buat file .gitignore --> untuk mendefinisikan folder / file yang tidak di track
- *  5. 
+ *  5. perintah commit 
+ *      --- git commit -m "inisial commit hore"
+ *      --- -m singkatan dari message
  */
