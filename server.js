@@ -90,6 +90,12 @@ hore.get('/about', (req, res) => {
     });
 });
 
+hore.get('/projects', (minta, terima) => {
+    terima.render('projects.hbs', {
+        title: "Project Terbaru"
+    });
+});
+
 // 2. ngirim data JSON
 hore.get('/json', (req, res) => {
     res.send({
@@ -191,5 +197,14 @@ hore.listen(port, () => {
  * $ heroku keys ---- menampilkan ssh-rsa ... dan email
  * $ heroku keys:remove    --- to REMOVE
  * $ ssh -v git@heroku.com ---- to authenticate to HEROKU ... (harus dengan git bash)
- * VIDEO 06.21
+ * 
+ */
+
+/**
+ * Git to Heroku
+ * =============
+ * $ git push .... saja bisa... apa artinya origin?
+ * $ heroku create    ----- perintah membuat aplikasi
+ * $ git push heroku   ----- perintah mengunggah heroku app from lokal
+ * $ heroku open
  */
