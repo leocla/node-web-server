@@ -150,7 +150,6 @@ hore.listen(port, () => {
  * --------------------------------//
  */
 
-
 /**
  * LEARN ABOUT GIT
  * ===============
@@ -162,4 +161,19 @@ hore.listen(port, () => {
  *  5. perintah commit 
  *      --- git commit -m "inisial commit hore"
  *      --- -m singkatan dari message
+ *  6.  --- git rm app.js -f :: --- menghapus file
+ *      --- git rm app.js --cached    ::: hanya menghapus dari 'changes to be commited'
  */
+
+ /**
+  * GENERATING NEW SSH KEY
+  * $  ssh-keygen -t rsa -b 4096 -C 'email@gmail.com'
+  * CEK AGENT SSH
+  * $  eval $(ssh-agent -s)
+  * ---------------
+  * CEK SSH ada atau tidak
+  * $  ls -al ~/.ssh
+  * -----------------
+  * CEK SUDAH TERHUBUNG DENGAN GITHUB ATAU BELUM
+  * $ ssh -T git@github.com
+  */
