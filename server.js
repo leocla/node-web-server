@@ -2,6 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs'); // untuk menulis LOG
 
+const port = process.env.PORT || 3000; // HEROKU ... env port for heroku || 3000 for locally
+
 var hore = express();
 
 hbs.registerPartials(__dirname + '/views/part-haha');
@@ -139,7 +141,7 @@ hore.get('/help', (req, res) => {
 //     console.log("Server berjalan pada port 3000");
 // }); 
 //////// new arrow function
-var port = 3000;
+//var port = 3000;
 hore.listen(port, () => {
     console.log(`Server is running in port ${port}, Thank you`);
 });
@@ -177,3 +179,17 @@ hore.listen(port, () => {
   * CEK SUDAH TERHUBUNG DENGAN GITHUB ATAU BELUM
   * $ ssh -T git@github.com
   */
+
+
+/**
+ * ABOUT HEROKU
+ * ============
+ * $ heroku --version
+ * $ heroku --help
+ * $ heroku login
+ * $ heroku keys:add
+ * $ heroku keys ---- menampilkan ssh-rsa ... dan email
+ * $ heroku keys:remove    --- to REMOVE
+ * $ ssh -v git@heroku.com ---- to authenticate to HEROKU ... (harus dengan git bash)
+ * VIDEO 06.21
+ */
