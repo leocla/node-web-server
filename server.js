@@ -216,4 +216,8 @@ hore.listen(port, () => {
  * $ heroku create    ----- perintah membuat aplikasi
  * $ git push heroku   ----- perintah mengunggah heroku app from lokal
  * $ heroku open
+ * 
+ * (UPLOAD) PUSH TO ALL REMOTE.... (heroku dan origin github)
+ * $ git remote | xargs -L1 git push --all
+ * --- harus dengan menggunakan git bash... cmd tak bisa
  */
