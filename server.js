@@ -96,6 +96,12 @@ hore.get('/projects', (minta, terima) => {
     });
 });
 
+hore.get('/feature', (req, res) => {
+    res.render('feature.hbs', {
+        title: "Halaman FITUR BRO"
+    })
+});
+
 // 2. ngirim data JSON
 hore.get('/json', (req, res) => {
     res.send({
@@ -203,7 +209,10 @@ hore.listen(port, () => {
 /**
  * Git to Heroku
  * =============
- * $ git push .... saja bisa... apa artinya origin?
+ * $ git push .... saja bisa... artinya ya bisa ke semua
+ * $$$$$$ origin ditujukan ke remote utama,,, misal github
+ * $$$$$$ cara cek dengan perintah
+ * $ git remote -v  ---- melihat semua daftar git push
  * $ heroku create    ----- perintah membuat aplikasi
  * $ git push heroku   ----- perintah mengunggah heroku app from lokal
  * $ heroku open
